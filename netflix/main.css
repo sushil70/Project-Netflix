@@ -1,0 +1,178 @@
+body {
+    margin-left: 50px;
+    background-color: black;
+    color: white;
+    margin-top: 0px;
+    margin-right: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    margin: 0px;
+    background-color: black;
+}
+
+.menu {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.menu img {
+    width: 150px;
+    margin-right: 40px;
+
+}
+
+.menu_list {
+    margin: 0px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#bell {
+    position: relative;
+    text-align: center;
+    width: auto;
+    padding: 5px;
+}
+
+.bell_noti {
+    background-color: darkred;
+    color: white;
+    width: 13px;
+    height: 13px;
+    border-radius: 10px;
+    font-size: 12px;
+
+    position: absolute;
+    top: 0px;
+    left: 13px;
+    vertical-align: middle;
+}
+
+.user {
+    display: flex;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.user_list {
+    margin: auto 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.user_list img {
+    width: 40px;
+}
+
+#drop_down {
+    margin: auto 0px;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    background: url(https://dkr0pu7ej5xex.cloudfront.net/wp-content/uploads/2017/04/24135159/Netflix-Background.jpg);
+    overflow: hidden;
+}
+
+.background {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.catgory {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.movies_wrap {
+    display: flex;
+
+    overflow: hidden;
+
+}
+
+.movies_list {
+    display: flex;
+    margin: 2px;
+}
+
+.movies {
+    display: flex;
+}
+
+.movies:hover {
+    transform: scale(1.2);
+
+}
+
+.movies img {
+    width: 220px;
+    height: 110px;
+    cursor: pointer;
+}
+
+@media (max-width: 769px) {
+    .header {
+        width: 100%;
+    }
+
+    .menu img {
+        width: 100px;
+    }
+
+    .menu_list {
+        display: none;
+    }
+
+    #chi {
+        display: none;
+    }
+}
+
+
+@media (max-width: 600px) {
+    body {
+        margin: 5px;
+    }
+
+    .header {
+        width: 100%;
+    }
+
+    .menu_list {
+        display: none;
+    }
+
+    #chi {
+        display: none;
+    }
+}
+
+
+@media (max-width: 360px) {
+    body {
+        margin: 5px;
+    }
+
+    .menu_list {
+        display: none;
+    }
+
+    #chi {
+        display: none;
+    }
+
+    #bell {
+        display: none;
+    }
+}
